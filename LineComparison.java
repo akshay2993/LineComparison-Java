@@ -1,5 +1,4 @@
-package com.bridgelabz.javaproblems;
-
+package com.bridgelabz.JavaPP_Day;
 import java.util.Scanner;
 
 public class LineComparison {
@@ -33,10 +32,12 @@ public class LineComparison {
 		System.out.println("Length(line 1)/Distance between (x1, y1) & (x2, y2): " + dist1 +" units" );
 		System.out.println("Length(line 2)/Distance between (x3, y3) & (x4, y4): " + dist2 +" units" );
 
-		if(dist1.equals(dist2)){
-			System.out.println("Line 1 is equal to line 2!");
+		if((dist1.compareTo(dist2)) <= 0){
+			System.out.println("Line 2 is greater than line 1!");
+		}else if((dist1.compareTo(dist2)) >= 0) {
+			System.out.println("Line 1 is greater than line 2!");
 		}else {
-			System.out.println("Line 1 is not equal to line 2!");
+			System.out.println("Line 1 is equal to line 2!");
 		}
 	}
 }
